@@ -1,0 +1,12 @@
+# ninja log v5
+14	360	7479342377713891	WilloRuntime/CMakeFiles/WilloRuntime.dir/src/main.cpp.obj	8691e41c65c2c64b
+1882	2222	7479342393799871	WilloRuntime/WilloRuntime.exe	95bd112c7878b3ea
+6	894	7479342383061488	WilloEngine/CMakeFiles/WilloEngine.dir/src/ImplInputManager.cpp.obj	93941c1a8b46a3cb
+16	1474	7478993110400201	WilloEngine/CMakeFiles/WilloEngine.dir/src/ImplWindow.cpp.obj	6c5dab0d9427ebf8
+12	1266	7479342386776948	WilloEditor/CMakeFiles/WilloEditor.dir/src/main.cpp.obj	42f3dcd2d181c057
+1768	1878	7479342392908235	WilloEngine/libWilloEngine.a	412d8c0316432c1e
+10	1670	7479342390822441	WilloEngine/CMakeFiles/WilloEngine.dir/src/Rendering/ImplRenderer.cpp.obj	70b8502f2b15b4b3
+8	1768	7479342391797694	WilloEngine/CMakeFiles/WilloEngine.dir/src/Rendering/D3D11ImplRenderer.cpp.obj	eb5c3bf1654789a3
+12	586	7478993101530180	_deps/tracy-build/CMakeFiles/TracyClient.dir/public/TracyClient.cpp.obj	b352df745969cf41
+587	642	7478993102095503	_deps/tracy-build/libTracyClient.a	3b35b56c2ce53dc
+1878	2685	7479342393850043	WilloEditor/WilloEditor.exe	db4d71aa9525c1ce

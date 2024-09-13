@@ -1,0 +1,21 @@
+# ninja log v5
+1	27	7478978233458179	tracy-populate-prefix/src/tracy-populate-stamp/tracy-populate-mkdir	1a540d08cb2e26c6
+1	27	7478978233458179	D:/Programming/WilloEngine/build/windows-debug/_deps/tracy-subbuild/tracy-populate-prefix/src/tracy-populate-stamp/tracy-populate-mkdir	1a540d08cb2e26c6
+27	9807	7478978331274596	tracy-populate-prefix/src/tracy-populate-stamp/tracy-populate-download	6f5d95d5479941cf
+27	9807	7478978331274596	D:/Programming/WilloEngine/build/windows-debug/_deps/tracy-subbuild/tracy-populate-prefix/src/tracy-populate-stamp/tracy-populate-download	6f5d95d5479941cf
+9807	11310	0	tracy-populate-prefix/src/tracy-populate-stamp/tracy-populate-update	6027348f41d33029
+9807	11310	0	D:/Programming/WilloEngine/build/windows-debug/_deps/tracy-subbuild/tracy-populate-prefix/src/tracy-populate-stamp/tracy-populate-update	6027348f41d33029
+11311	11335	7478978346539939	tracy-populate-prefix/src/tracy-populate-stamp/tracy-populate-patch	dee30a688ad1e3b9
+11311	11335	7478978346539939	D:/Programming/WilloEngine/build/windows-debug/_deps/tracy-subbuild/tracy-populate-prefix/src/tracy-populate-stamp/tracy-populate-patch	dee30a688ad1e3b9
+11335	11358	7478978346777466	tracy-populate-prefix/src/tracy-populate-stamp/tracy-populate-configure	ad4d3bd59514b08a
+11335	11358	7478978346777466	D:/Programming/WilloEngine/build/windows-debug/_deps/tracy-subbuild/tracy-populate-prefix/src/tracy-populate-stamp/tracy-populate-configure	ad4d3bd59514b08a
+11358	11381	7478978347009130	tracy-populate-prefix/src/tracy-populate-stamp/tracy-populate-build	29b30e8be259c910
+11358	11381	7478978347009130	D:/Programming/WilloEngine/build/windows-debug/_deps/tracy-subbuild/tracy-populate-prefix/src/tracy-populate-stamp/tracy-populate-build	29b30e8be259c910
+11381	11404	7478978347237182	tracy-populate-prefix/src/tracy-populate-stamp/tracy-populate-install	c6c74e202c999b9a
+11381	11404	7478978347237182	D:/Programming/WilloEngine/build/windows-debug/_deps/tracy-subbuild/tracy-populate-prefix/src/tracy-populate-stamp/tracy-populate-install	c6c74e202c999b9a
+11404	11428	7478978347479365	tracy-populate-prefix/src/tracy-populate-stamp/tracy-populate-test	827c16c6e2b02832
+11404	11428	7478978347479365	D:/Programming/WilloEngine/build/windows-debug/_deps/tracy-subbuild/tracy-populate-prefix/src/tracy-populate-stamp/tracy-populate-test	827c16c6e2b02832
+11428	11460	7478978347792443	CMakeFiles/tracy-populate-complete	c137f15ab268b9b3
+11428	11460	7478978347792443	tracy-populate-prefix/src/tracy-populate-stamp/tracy-populate-done	c137f15ab268b9b3
+11428	11460	7478978347792443	D:/Programming/WilloEngine/build/windows-debug/_deps/tracy-subbuild/CMakeFiles/tracy-populate-complete	c137f15ab268b9b3
+11428	11460	7478978347792443	D:/Programming/WilloEngine/build/windows-debug/_deps/tracy-subbuild/tracy-populate-prefix/src/tracy-populate-stamp/tracy-populate-done	c137f15ab268b9b3

@@ -1,0 +1,19 @@
+{
+    "version": 2,
+    "configurePresets": [
+        {
+            "name": "windows-release",
+            "inherits": "vcpkg",
+            "environment": {
+            "VCPKG_ROOT": "<path to vcpkg>"
+            }
+        },
+        {
+            "name": "windows-debug",
+            "inherits": "vcpkg",
+            "environment": {
+            "VCPKG_ROOT": "<path to vcpkg>"
+            }
+        }
+    ]
+}
