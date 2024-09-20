@@ -2,13 +2,13 @@
 
 #include <iostream>
 
-#include <tracy/Tracy.hpp>
+#include <WilloEngine/Profiling.hpp>
 
 namespace WilloEngine
 {
     bool D3D11ImplRenderer::CreateSwapchainResources(uint32_t width, uint32_t height)
     {
-        ZoneScoped;
+        WILLO_ENGINE_PROFILE_C(WilloEngine::Profiling::Colour::Cyan);
 
         ComPtr<ID3D11Texture2D> backBuffer = nullptr;
         if (FAILED(_swapchain->GetBuffer(
@@ -38,7 +38,7 @@ namespace WilloEngine
 
     bool D3D11ImplRenderer::Init(const RendererCreateInfo& createInfo)
     {
-        ZoneScoped;
+        WILLO_ENGINE_PROFILE_C(WilloEngine::Profiling::Colour::Cyan);
 
         if (FAILED(CreateDXGIFactory1(IID_PPV_ARGS(&_dxgiFactory)))) {
             std::cout << "Failed to create DXGI factory\n";
@@ -128,7 +128,7 @@ namespace WilloEngine
 
     void D3D11ImplRenderer::Resize(uint32_t width, uint32_t height)
     {
-        ZoneScoped;
+        WILLO_ENGINE_PROFILE_C(WilloEngine::Profiling::Colour::Cyan);
 
         _deviceContext->Flush();
 
@@ -153,7 +153,7 @@ namespace WilloEngine
 
     void D3D11ImplRenderer::Render()
     {
-        ZoneScoped;
+        WILLO_ENGINE_PROFILE_C(WilloEngine::Profiling::Colour::Cyan);
 
         D3D11_VIEWPORT viewport = {
             .TopLeftX = 0,

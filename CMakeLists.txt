@@ -10,6 +10,8 @@ add_subdirectory(external)
 set(WILLO_ENGINE_BUILD_EDITOR true)
 set(WILLO_ENGINE_BUILD_RUNTIME true)
 
+option(WILLO_ENGINE_ENABLE_PROFILING "Enable profiling for WilloEngine" ON)
+
 if (WILLO_ENGINE_BUILD_EDITOR)
     set(WILLO_ENGINE_BUILD_ENGINE true)
 endif()

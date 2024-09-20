@@ -4,6 +4,8 @@
 
 #include <iostream>
 
+#include <WilloEngine/Profiling.hpp>
+
 namespace WilloEngine
 {
     bool Window::Create(Window& window, uint32_t width, uint32_t height, const std::string& title)
@@ -18,6 +20,8 @@ namespace WilloEngine
 
     bool ImplWindow::Init(uint32_t width, uint32_t height, const std::string& title)
     {
+        WILLO_ENGINE_PROFILE_C(WilloEngine::Profiling::Colour::Gray);
+
         if (!InitSDLWindow(width, height, title)) {
             std::cout << "Failed initialising SDL windowing\n";
             return false;
@@ -28,6 +32,8 @@ namespace WilloEngine
 
     bool ImplWindow::InitSDLWindow(uint32_t width, uint32_t height, const std::string& title)
     {
+        WILLO_ENGINE_PROFILE_C(WilloEngine::Profiling::Colour::Gray);
+
         SDL_Init(SDL_INIT_VIDEO);
 
         SDL_WindowFlags windowFlags = SDL_WINDOW_RESIZABLE;
@@ -60,6 +66,8 @@ namespace WilloEngine
     bool Window::PollEvents() { return impl->PollEvents(); }
     bool ImplWindow::PollEvents()
     {
+        WILLO_ENGINE_PROFILE_C(WilloEngine::Profiling::Colour::Gray);
+
         bool returnValue = true;
         SDL_Event event;
 

@@ -2,7 +2,7 @@
 
 #include <iostream>
 
-#include <tracy/Tracy.hpp>
+#include <WilloEngine/Profiling.hpp>
 
 namespace WilloEngine
 {
@@ -26,7 +26,7 @@ namespace WilloEngine
     void InputManager::Update() { impl->Update(); }
     void ImplInputManager::Update()
     {
-        ZoneScoped;
+        WILLO_ENGINE_PROFILE_C(WilloEngine::Profiling::Colour::Aqua);
 
         if (_useGetKey)
             _pressKeys.clear();
@@ -51,7 +51,7 @@ namespace WilloEngine
 
     void ImplInputManager::RunCallbacks(KEY_CODE keyCode, INPUT_EVENT_TYPE eventType)
     {
-        ZoneScoped;
+        WILLO_ENGINE_PROFILE_C(WilloEngine::Profiling::Colour::Aqua);
         // key press
         if (eventType == INPUT_EVENT_TYPE::KEY_PRESSED) {
             auto pressCallbacks = _keycodePressCallbacks.find(keyCode);
@@ -88,14 +88,14 @@ namespace WilloEngine
     void InputManager::ReceiveKeypressEvent(KEY_CODE keyCode, INPUT_EVENT_TYPE eventType) { impl->ReceiveKeypressEvent(keyCode, eventType); }
     void ImplInputManager::ReceiveKeypressEvent(KEY_CODE keyCode, INPUT_EVENT_TYPE eventType)
     {
-        ZoneScoped;
+        WILLO_ENGINE_PROFILE_C(WilloEngine::Profiling::Colour::Aqua);
         _inputEventQueue.push(std::pair(keyCode, eventType));
     }
 
     bool InputManager::GetKey(KEY_CODE keyCode, INPUT_EVENT_TYPE eventType) { return impl->GetKey(keyCode, eventType); }
     bool ImplInputManager::GetKey(KEY_CODE keyCode, INPUT_EVENT_TYPE eventType)
     {
-        ZoneScoped;
+        WILLO_ENGINE_PROFILE_C(WilloEngine::Profiling::Colour::Aqua);
         if (eventType == INPUT_EVENT_TYPE::KEY_PRESSED)
         {
             auto iter = _pressKeys.find(keyCode);
@@ -120,6 +120,7 @@ namespace WilloEngine
         impl->SubscribeKey(keyCode, eventType, callback); }
     void ImplInputManager::SubscribeKey(KEY_CODE keyCode, INPUT_EVENT_TYPE eventType, std::function<void()> callback)
     {
+        WILLO_ENGINE_PROFILE_C(WilloEngine::Profiling::Colour::Aqua);
         if (eventType == INPUT_EVENT_TYPE::KEY_PRESSED) {
             if (_keycodePressCallbacks.find(keyCode) == _keycodePressCallbacks.end()) {
                 _keycodePressCallbacks.insert(std::pair(keyCode, std::vector<std::function<void()>>()));
@@ -137,6 +138,7 @@ namespace WilloEngine
         impl->SubscribeKey(eventType, callback); }
     void ImplInputManager::SubscribeKey(INPUT_EVENT_TYPE eventType, std::function<void(KEY_CODE)> callback)
     {
+        WILLO_ENGINE_PROFILE_C(WilloEngine::Profiling::Colour::Aqua);
         if (eventType == INPUT_EVENT_TYPE::KEY_PRESSED) {
             _eventPressCallbacks.push_back(callback);
         } else {

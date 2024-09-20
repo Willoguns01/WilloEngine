@@ -17,8 +17,7 @@ find_package(SDL2 CONFIG REQUIRED)
 
 target_link_Libraries(WilloEngine PRIVATE SDL2::SDL2 d3d11 dxgi)
 
-option(WILLO_ENGINE_ENABLE_PROFILING "Enable profiling for WilloEngine" ON)
-
 if (WILLO_ENGINE_ENABLE_PROFILING)
-    target_link_libraries(WilloEngine PUBLIC TracyClient)
+    target_link_libraries(WilloEngine PRIVATE TracyClient)
+    target_compile_definitions(WilloEngine PRIVATE WILLO_ENGINE_ENABLE_PROFILING)
 endif()

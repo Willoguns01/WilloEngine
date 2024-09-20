@@ -9,7 +9,7 @@ FetchContent_Declare (
     GIT_PROGRESS TRUE
 )
 
-set(TRACY_ENABLE OFF)
-set(TRACY_ON_DEMAND ON)
+set(TRACY_ENABLE ON)
+set(TRACY_ON_DEMAND OFF)
 
 FetchContent_MakeAvailable(tracy)

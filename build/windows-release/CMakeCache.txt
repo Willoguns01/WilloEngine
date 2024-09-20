@@ -205,7 +205,7 @@ CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 CMAKE_PROJECT_NAME:STATIC=WilloEngineProject
 
 //Value Computed by CMake
-CMAKE_PROJECT_VERSION:STATIC=0.11.2
+CMAKE_PROJECT_VERSION:STATIC=0.11.1
 
 //Value Computed by CMake
 CMAKE_PROJECT_VERSION_MAJOR:STATIC=0
@@ -214,7 +214,7 @@ CMAKE_PROJECT_VERSION_MAJOR:STATIC=0
 CMAKE_PROJECT_VERSION_MINOR:STATIC=11
 
 //Value Computed by CMake
-CMAKE_PROJECT_VERSION_PATCH:STATIC=2
+CMAKE_PROJECT_VERSION_PATCH:STATIC=1
 
 //Value Computed by CMake
 CMAKE_PROJECT_VERSION_TWEAK:STATIC=
@@ -293,8 +293,8 @@ CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 //Path to a program.
 CMAKE_STRIP:FILEPATH=C:/msys64/ucrt64/bin/strip.exe
 
-//No help, variable specified on the command line.
-CMAKE_TOOLCHAIN_FILE:UNINITIALIZED=D:/vcpkg/scripts/buildsystems/vcpkg.cmake
+//The CMake toolchain file
+CMAKE_TOOLCHAIN_FILE:FILEPATH=D:/vcpkg/scripts/buildsystems/vcpkg.cmake
 
 //If this value is on, makefiles will be generated without the
 // .SILENT directive, and all commands will be echoed to the console
@@ -402,7 +402,7 @@ TRACY_ONLY_IPV4:BOOL=OFF
 TRACY_ONLY_LOCALHOST:BOOL=OFF
 
 //On-demand profiling
-TRACY_ON_DEMAND:BOOL=ON
+TRACY_ON_DEMAND:BOOL=OFF
 
 //Enable nopsleds for efficient patching by system-level tools
 // (e.g. rr)
@@ -482,9 +482,6 @@ VCPKG_TRACE_FIND_PACKAGE:BOOL=OFF
 
 //Enables messages from the VCPKG toolchain for debugging purposes.
 VCPKG_VERBOSE:BOOL=OFF
-
-//Enable profiling for WilloEditor
-WILLO_EDITOR_ENABLE_PROFILING:BOOL=ON
 
 //Enable profiling for WilloEngine
 WILLO_ENGINE_ENABLE_PROFILING:BOOL=ON
